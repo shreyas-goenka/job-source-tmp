@@ -1,0 +1,25 @@
+{
+  "evaluation" : {
+    "source" : {
+      "name" : "1",
+      "display" : "1",
+      "aggregation" : "AGGREGATION_UNSPECIFIED"
+    },
+    "comparison_operator" : "EQUAL",
+    "threshold" : {
+      "value" : {
+        "double_value" : 3.0
+      }
+    },
+    "notification" : {
+      "retrigger_seconds" : 0,
+      "notify_on_ok" : true
+    }
+  },
+  "schedule" : {
+    "quartz_cron_schedule" : "2 11 */1 * * ?",
+    "timezone_id" : "Europe/Amsterdam"
+  },
+  "query_lines" : [ "select 1" ],
+  "custom_description_lines" : [ "a c" ]
+}
